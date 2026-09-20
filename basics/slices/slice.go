@@ -1,11 +1,12 @@
-package  main 
+package main
 
 import (
-    "fmt"
-    "math/rand"
+	"fmt"
+	"math/rand"
+	"slices"
 )
 
-// slice -> it is dynainc in nature , most used construct in go .. 
+// slice -> it is dynainc in nature , most used construct in go ..
 func main (){
 	 // parameters in case of nums = make([]int , size  , capacity(max cap ))
 	  var  i int 
@@ -19,6 +20,9 @@ func main (){
 		
 		  fmt.Println(nums)
 		  fmt.Println(len(nums), cap(nums))
-		
+		   // slice 
+		   var num1 = []int{12 , 3 , 4 , 5}
+		   var num3 = []int{12 , 3 , 4 , 5}
+		    fmt.Println(slices.Compare(num1 , num3))
    
 		}
